@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_navigation"
+    app:startDestination="@id/numberListFragment">
+
+    <fragment
+        android:id="@+id/numberListFragment"
+        android:name="com.florian.numberslight.fragment.NumberListFragment"
+        android:label="NumberListFragment" >
+        <action
+            android:id="@+id/action_numberListFragment_to_numberDetailsFragment"
+            app:destination="@id/numberDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberDetailsFragment"
+        android:name="com.florian.numberslight.fragment.NumberDetailsFragment"
+        android:label="NumberDetailsFragment" />
+</navigation>

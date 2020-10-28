@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NumbersLight</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="content_description_number_image">Number Image</string>
+    <string name="number_details_placeholder">No element to display</string>
+    <string name="no_data_received">No data received</string>
+    <string name="network_error">Network error</string>
+    <string name="try_again">Try again</string>
+    <string name="loading">Loading. Please wait…</string>
+</resources>
