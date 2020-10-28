@@ -7,7 +7,6 @@ import com.florian.numberslight.model.INumber
 import com.florian.numberslight.model.Number
 import com.florian.numberslight.repository.NumberRepository
 import kotlinx.coroutines.CoroutineExceptionHandler
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import java.io.IOException
 
@@ -45,7 +44,6 @@ class NumberDetailsViewModel(private val repository: NumberRepository) : ViewMod
         currentItem = number
         viewModelScope.launch(coroutineExceptionHandler) {
             _loading.value = true
-            delay(2000)
             with(repository.getNumber(number)) {
                 if (this != null) {
                     _number.value = this
